@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\ThisProject.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{F31BBDD1-B3E8-3BCC-9652-680E16935819}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\ThisProject.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\ThisProjectEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <ClCompile Include="..\..\homeword_19_#1.cpp" />
+    <ClCompile Include="..\..\homework_18.cpp" />
+    <ClCompile Include="..\..\homework_19_#2.cpp" />
+    <ClCompile Include="..\..\homework_20.cpp" />
+    <ClCompile Include="..\..\homework_21.cpp" />
+    <ClCompile Include="..\..\homework_22.cpp" />
+    <ClCompile Include="..\..\homework_23.cpp" />
+    <ClCompile Include="..\..\homework_24.cpp" />
+    <Filter Include="Config">
+      <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\ThisProject">
+      <UniqueIdentifier>{CEE2A9C8-7AD8-3512-A0FD-8E0D09D221AB}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\ThisProject\ThisProject.Build.cs">
+      <Filter>Source\ThisProject</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\ThisProject\ThisProject.cpp">
+      <Filter>Source\ThisProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ThisProject\ThisProject.h">
+      <Filter>Source\ThisProject</Filter>
+    </ClInclude>
+    <Filter Include="Source\ThisProject\Private">
+      <UniqueIdentifier>{5DCD80EE-D97C-324F-83D2-BDB3315C35E6}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\ThisProject\Private\MyGameModeBase.cpp">
+      <Filter>Source\ThisProject\Private</Filter>
+    </ClCompile>
+    <Filter Include="Source\ThisProject\Public">
+      <UniqueIdentifier>{5CCCED48-4546-3149-98E9-DD42D80CB431}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\ThisProject\Public\MyGameModeBase.h">
+      <Filter>Source\ThisProject\Public</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
