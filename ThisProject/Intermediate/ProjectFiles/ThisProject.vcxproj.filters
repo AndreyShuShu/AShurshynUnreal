@@ -11,6 +11,7 @@
     <None Include="..\..\Source\ThisProjectEditor.Target.cs">
       <Filter>Source</Filter>
     </None>
+    <None Include="..\..\.vsconfig" />
     <ClCompile Include="..\..\homeword_19_#1.cpp" />
     <ClCompile Include="..\..\homework_18.cpp" />
     <ClCompile Include="..\..\homework_19_#2.cpp" />
@@ -52,13 +53,13 @@
     <Filter Include="Source\ThisProject\Private">
       <UniqueIdentifier>{5DCD80EE-D97C-324F-83D2-BDB3315C35E6}</UniqueIdentifier>
     </Filter>
-    <ClCompile Include="..\..\Source\ThisProject\Private\MyGameModeBase.cpp">
+    <ClCompile Include="..\..\Source\ThisProject\Private\MyCharacter.cpp">
       <Filter>Source\ThisProject\Private</Filter>
     </ClCompile>
     <Filter Include="Source\ThisProject\Public">
       <UniqueIdentifier>{5CCCED48-4546-3149-98E9-DD42D80CB431}</UniqueIdentifier>
     </Filter>
-    <ClInclude Include="..\..\Source\ThisProject\Public\MyGameModeBase.h">
+    <ClInclude Include="..\..\Source\ThisProject\Public\MyCharacter.h">
       <Filter>Source\ThisProject\Public</Filter>
     </ClInclude>
   </ItemGroup>

@@ -1,0 +1,14 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\user\\documents\\github\\ashurshynunreal\\thisproject\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\thisproject\\permoduleinline.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\user\\documents\\github\\ashurshynunreal\\thisproject\\intermediate\\build\\win64\\x64\\thisprojecteditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.inclorderunreal5_3.h.pch",
+        "Includes": [
+            "c:\\users\\user\\documents\\github\\ashurshynunreal\\thisproject\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\thisproject\\definitions.thisproject.h",
+            "e:\\ue_5.6\\engine\\source\\runtime\\core\\public\\hal\\permoduleinline.inl"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
