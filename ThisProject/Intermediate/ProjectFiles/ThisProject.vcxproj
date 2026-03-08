@@ -267,6 +267,7 @@
     <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini"/>
     <None Include="..\..\Config\DefaultEngine.ini"/>
     <None Include="..\..\Config\DefaultGame.ini"/>
+    <None Include="..\..\Config\DefaultGameplayTags.ini"/>
     <None Include="..\..\Config\DefaultInput.ini"/>
     <None Include="..\..\Source\ThisProject\ThisProject.Build.cs"/>
     <ClCompile Include="..\..\Source\ThisProject\ThisProject.cpp">

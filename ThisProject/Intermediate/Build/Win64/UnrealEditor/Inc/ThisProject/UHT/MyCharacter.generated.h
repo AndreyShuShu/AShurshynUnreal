@@ -16,10 +16,16 @@
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
+struct FGameplayTag;
+
 // ********** Begin Class AMyCharacter *************************************************************
+#define FID_ThisProject_Source_ThisProject_Public_MyCharacter_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execActivateAbilityByTag);
+
+
 THISPROJECT_API UClass* Z_Construct_UClass_AMyCharacter_NoRegister();
 
-#define FID_ThisProject_Source_ThisProject_Public_MyCharacter_h_13_INCLASS_NO_PURE_DECLS \
+#define FID_ThisProject_Source_ThisProject_Public_MyCharacter_h_14_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAMyCharacter(); \
 	friend struct Z_Construct_UClass_AMyCharacter_Statics; \
@@ -31,7 +37,7 @@ public: \
 	virtual UObject* _getUObject() const override { return const_cast<AMyCharacter*>(this); }
 
 
-#define FID_ThisProject_Source_ThisProject_Public_MyCharacter_h_13_ENHANCED_CONSTRUCTORS \
+#define FID_ThisProject_Source_ThisProject_Public_MyCharacter_h_14_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	AMyCharacter(AMyCharacter&&) = delete; \
 	AMyCharacter(const AMyCharacter&) = delete; \
@@ -41,12 +47,13 @@ public: \
 	NO_API virtual ~AMyCharacter();
 
 
-#define FID_ThisProject_Source_ThisProject_Public_MyCharacter_h_10_PROLOG
-#define FID_ThisProject_Source_ThisProject_Public_MyCharacter_h_13_GENERATED_BODY \
+#define FID_ThisProject_Source_ThisProject_Public_MyCharacter_h_11_PROLOG
+#define FID_ThisProject_Source_ThisProject_Public_MyCharacter_h_14_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_ThisProject_Source_ThisProject_Public_MyCharacter_h_13_INCLASS_NO_PURE_DECLS \
-	FID_ThisProject_Source_ThisProject_Public_MyCharacter_h_13_ENHANCED_CONSTRUCTORS \
+	FID_ThisProject_Source_ThisProject_Public_MyCharacter_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_ThisProject_Source_ThisProject_Public_MyCharacter_h_14_INCLASS_NO_PURE_DECLS \
+	FID_ThisProject_Source_ThisProject_Public_MyCharacter_h_14_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

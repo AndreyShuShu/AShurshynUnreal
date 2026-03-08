@@ -3,6 +3,8 @@
 
 #include "MyCharacter.h"
 #include "AbilitySystemComponent.h"
+#include "Abilities/GameplayAbility.h"
+#include "GameplayAbilitySpec.h"
 
 // Sets default values
 AMyCharacter::AMyCharacter()
@@ -36,20 +38,42 @@ void AMyCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompone
 
 }
 
-// 1. Возвращаем наш компонент
+// 1. Return our component
 UAbilitySystemComponent* AMyCharacter::GetAbilitySystemComponent() const
 {
 	return AbilitySystemComponent;
 }
 
-// 2. Инициализируем GAS, когда контроллер берет управление
+// 2. Init GAS
 void AMyCharacter::PossessedBy(AController* NewController)
 {
 	Super::PossessedBy(NewController);
 
-	if (AbilitySystemComponent)
-	{
-		// Персонаж является и владельцем (Owner), и аватаром (Avatar)
-		AbilitySystemComponent->InitAbilityActorInfo(this, this);
-	}
+    if (AbilitySystemComponent)
+    {
+        AbilitySystemComponent->InitAbilityActorInfo(this, this);
+
+        // Giving abilities
+        if (HasAuthority())
+        {
+            for (TSubclassOf<UGameplayAbility>& StartupAbility : DefaultAbilities)
+            {
+                if (StartupAbility)
+                {
+                    // Create an AbilitySpec and pass it to the component
+                    AbilitySystemComponent->GiveAbility(FGameplayAbilitySpec(StartupAbility, 1, INDEX_NONE, this));
+                }
+            }
+        }
+    }
+}
+
+// Activation implementation
+void AMyCharacter::ActivateAbilityByTag(FGameplayTag AbilityTag)
+{
+    if (AbilitySystemComponent)
+    {
+        // Trying to activate all the abilities with tag
+        AbilitySystemComponent->TryActivateAbilitiesByTag(FGameplayTagContainer(AbilityTag));
+    }
 }
